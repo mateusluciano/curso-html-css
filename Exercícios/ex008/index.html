@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de Textos</title>
+    <style>
+        mark {
+            background-color: lightcoral;
+        }
+    </style>
+</head>
+<body>
+    <h1>Principais formatações</h1>
+    <h2>Negrito / Destaque</h2>
+    <p>Nesta frase, temos um <b>termo em negrito</b> usando a tag <b>&lt;b&gt;</b> (não semântica).</p>
+    <p>Nesta frase, tenho um <strong>termo em destque</strong> usando a tag <strong>&lt;strong&gt;</strong> (semântica).</p>
+
+    <h2>Itálico / Ênfase</h2>
+    <p>Nesta frase, temos um <strong><i>termo em itálico</i></strong> usando a tag <strong><i>&lt;i&gt;</i></strong> (não semântica).</p>
+    <p>Nesta frase, temos um <strong><em>termo em ênfase</em></strong> usando a tag <strong><em>&lt;em&gt;</em></strong> (semântica).</p>
+
+    <h2>Texto Marcado</h2>
+    <p>Podemos criar também um <strong><mark style="background-color: greenyellow;">texto marcado</mark></strong> usando a tag <strong>&lt;mark&gt;</strong></p>
+    <p>Testando <strong><mark>nova marcação</mark></strong>!</p>
+    <p>E no outro parágrafo, temos <strong><mark>outro texto marcado</mark></strong> no final, e sem herdar o estilo CSS adicionado no primeiro! <em>(adicionamos um estilo para alterar os demais de uma vez!)</em></p>
+
+    <h2>Texto grande e pequeno</h2>
+    <p>Estamos criando um <strong><big>texto grande</big></strong> e um <strong><small>texto pequeno</small></strong> nesse parágrafo. Usando a tag <strong>&lt;big&gt;</strong> <em>(que está em desuso)</em> e a tag <strong>&lt;small&gt;</strong> <em>(letras de contrato, copyright &copy;, textos acadêmicos,detalhes, etc)</em>.</p>
+
+    <h2>Texto deletado <em><small>(texto riscado)</small></em></h2>
+    <p>Podemos marcar um <strong><del>texto como excluído</del></strong> para indicar que ele deve ser lido, mas não considerado. <em>(texto riscado)</em>. Usando a tag <strong>&lt;del&gt;</strong>.</p>
+
+    <h2>Texto inserido <em><small>(texto sublinhado)</small></em></h2>
+    <p>Podemos marcar um <strong><ins>texto como inserido</ins></strong> para dar uma ênfase e indicar que ele foi adicionado depois. Usando a tag <strong>&lt;ins&gt;</strong>.</p>
+    <p>Existe também o <strong><u>texto sublinhado</u></strong> com a tag <strong>&lt;u&gt;</strong><em> (não semântica)</em>.</p>
+
+    <h2>Texto sobrescrito</h2>
+    <p>Para inserir coisas elevadas, do tipo <strong>X<sup>20</sup>+3</strong>, como neste caso, onde o 20 está elevado!. Usando a tag <strong>&lt;sup&gt;</strong>.</p>
+
+    <h2>Texto subscrito</h2>
+    <p>Para inserir coisas abaixo, do tipo <strong>H<sub>2</sub>O</strong>, como nesse caso, onde o 2 está abaixo dos demais. Usando a tag <strong>&lt;sub&gt;</strong>.</p>
+</body>
+</html>
