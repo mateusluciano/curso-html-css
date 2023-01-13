@@ -4,5 +4,19 @@
 }
 
 body {
-    
+
+}
+header {
+    background-color: black;
+    color: white;
+}
+
+header > p > a {
+    color: white;
+    text-decoration: none;
+}
+
+footer > p > a {
+    color: black;
+    text-decoration: none;
 }
