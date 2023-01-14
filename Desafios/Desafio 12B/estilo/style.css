@@ -1,22 +1,50 @@
 @charset "UTF-8";
 * {
     padding: 0px;
+    margin: 0px;
 }
 
-body {
-
+html, body {
+background-color: darkgray;
+min-height: 100vh;
 }
 header {
     background-color: black;
     color: white;
+    text-align: center;
+    padding: 50px 25px;
+    font-variant: small-caps;
 }
-
-header > p > a {
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+}
+section.normal {
+    background-color: white;
+}
+section.imagem {
+    background-color: rgb(49, 49, 49);
+    color: white;   
+}
+section.imagem > p {
+    width: 250px;
+    background-color: rgba(0, 0, 0, 0.55);
+}
+a {
     color: white;
     text-decoration: none;
+    font-weight: bold;
 }
-
-footer > p > a {
-    color: black;
-    text-decoration: none;
+a:hover {
+    text-decoration: underline;
+    font-size: 1.2em;
+    transition-duration: 0.25s;
+}
+footer {
+    background-color: black;
+    color: white;
+    padding: 8px;
+    text-align: center;
 }
