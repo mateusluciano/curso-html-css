@@ -4,17 +4,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 
 :root{
-    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte1: Verdana, 'Geneva', Tahoma, sans-serif;
     --fonte2: 'Passion One', 'cursive';
     --fonte3: 'Sriracha', 'cursive';
 }
-
 
 * {
     padding: 0px;
     margin: 0px;
     
 }
+
 
 html, body {
 background-color: darkgray;
@@ -43,14 +43,33 @@ section {
 section.normal {
     background-color: white;
 }
+section.normal > p {
+    padding-bottom: 2em;
+}
 section.imagem {
     background-color: rgb(49, 49, 49);
     color: white;   
+    box-shadow: inset 0px 5px 10px 10px rgba(0, 0, 0, 0.479);
+    background-size: cover;
 }
 section.imagem > p {
     display: inline-block;
     padding: 5px;
-    background-color: rgba(0, 0, 0, 0.55);
+    background-color: rgba(0, 0, 0, 0.658);
+    border-radius: 10px;
+    text-shadow: 2px 2px 0px black;
+}
+#img01 {
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#img02 {
+    background-image: url('../imagens/background002.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 a {
     color: white;
