@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1 {
+            text-align: center;
+            text-transform: uppercase;
+        }
+        thead, tfoot {
+            background-color: gray;
+            color: white;
+        }
+        table {
+            width: 500px;
+            margin: auto;
+            border-collapse: collapse;
+        }
+        tr, th, td {
+            border: 2px solid black;
+            height: 25px;
+            vertical-align: middle;
+        }
+        th, td {
+            padding: 10px;
+        }
+        th{
+            text-transform: uppercase;
+        }
+        td.estados {
+            width: 200px;
+        }
+        td.pop {
+            width: 130px;
+            text-align: center;
+        }
+        .total {
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.65em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+
+    <!-- 
+        Anatomia para tabelas grandes
+
+        TABLE
+            THEAD
+                TR, TH, TD
+            TBODY
+                TR, TH, TD
+            TFOOT
+                TR. TH, TD
+    -->
+
+    <table>
+        <thead>
+            <tr>
+                <th>Estado</th>
+                <th>População</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td class="estados">São Paulo</td>
+                <td class="pop">41262199</td>
+            </tr>
+            <tr>
+                <td class="estados">Minas Gerais</td>
+                <td class="pop">19597330</td>
+            </tr>
+            <tr>
+                <td class="estados">Rio de Janeiro</td>
+                <td class="pop">15989929</td>
+            </tr>
+            <tr>
+                <td class="estados">Bahia</td>
+                <td class="pop">14016906</td>
+            </tr>
+            <tr>
+                <td class="estados">Paraná</td>
+                <td class="pop">10444526</td>
+            </tr>
+            <tr>
+                <td class="estados">Rio Grande do Sul</td>
+                <td class="pop">10693929</td>
+            </tr>
+            <tr>
+                <td class="estados">Pernambuco</td>
+                <td class="pop">8796448</td>
+            </tr>
+            <tr>
+                <td class="estados">Ceará</td>
+                <td class="pop">8452381</td>
+            </tr>
+            <tr>
+                <td class="estados">Pará</td>
+                <td class="pop">7581051</td>
+            </tr>
+            <tr>
+                <td class="estados">Santa Catarina</td>
+                <td class="pop">6248436</td>
+            </tr>
+            <tr>
+                <td class="estados">Goiás</td>
+                <td class="pop">6003788</td>
+            </tr>
+            <tr>
+                <td class="estados">Maranhão</td>
+                <td class="pop">6574789</td>
+            </tr>
+            <tr>
+                <td class="estados">Espírito Santo</td>
+                <td class="pop">3514952</td>
+            </tr>
+            <tr>
+                <td class="estados">Paraíba</td>
+                <td class="pop">3766528</td>
+            </tr>
+            <tr>
+                <td class="estados">Amazonas</td>
+                <td class="pop">3483985</td>
+            </tr>
+            <tr>
+                <td class="estados">Mato Grosso</td>
+                <td class="pop">3035122</td>
+            </tr>
+            <tr>
+                <td class="estados">Rio Grande do Norte</td>
+                <td class="pop">3168027</td>
+            </tr>
+            <tr>
+                <td class="estados">Piauí</td>
+                <td class="pop">3118360</td>
+            </tr>
+            <tr>
+                <td class="estados">Alagoas</td>
+                <td class="pop">3120494</td>
+            </tr>
+            <tr>
+                <td class="estados">Distrito Federal</td>
+                <td class="pop">2923369</td>
+            </tr>
+            <tr>
+                <td class="estados">Mato Grosso do Sul</td>
+                <td class="pop">2449024</td>
+            </tr>
+            <tr>
+                <td class="estados">Sergipe</td>
+                <td class="pop">2068017</td>
+            </tr>
+            <tr>
+                <td class="estados">Rondônia</td>
+                <td class="pop">1562409</td>
+            </tr>
+            <tr>
+                <td class="estados">Tocantins</td>
+                <td class="pop">1383445</td>
+            </tr>
+            <tr>
+                <td class="estados">Acre</td>
+                <td class="pop">733559</td>
+            </tr>
+            <tr>
+                <td class="estados">Amapá</td>
+                <td class="pop">669526</td>
+            </tr>
+            <tr>
+                <td class="estados">Roraima</td>
+                <td class="pop">450479</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th>Total de Habitantes</th>
+                <td class="total"> 000</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <script src="somando.js"></script>
+</body>
+</html>
