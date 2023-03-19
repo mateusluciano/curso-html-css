@@ -8,6 +8,7 @@
     <style>
         body{
             font-family: Arial, Helvetica, sans-serif;
+            font-size: 0.75em;
         }
         table{
             border-collapse: collapse;
@@ -15,6 +16,9 @@
         th, td {
             border: 2px solid black;
             padding: 5px 15px;
+        }
+        tr:nth-child(even){
+            background-color: gray;
         }
         div{
             overflow-x: auto;
@@ -26,6 +30,9 @@
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem minima commodi vitae est architecto tempora soluta. Dolorem culpa, voluptas ex saepe odio eum, quia consectetur, eaque numquam amet quod natus!</p>
     <div>
         <table>
+            <colgroup>
+                <col id="prod">
+            </colgroup>
             <caption>Tabelas Responsivas</caption>
             <thead>
                 <tr>
