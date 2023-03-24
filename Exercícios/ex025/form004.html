@@ -7,6 +7,33 @@
     <title>Formulários</title>
 </head>
 <body>
-    <h1>Teste de Formulários</h1>
+    <h1>Exemplo de Formulários</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <p>
+                <label for="inome">Nome</label>
+                <input type="text" name="nome" id="inome" required
+                minlength="6" maxlength="30" autocomplete="name" placeholder="Nome e Sobrenome">
+            </p>
+            <p>
+                <label for="iemail">E-mail</label>
+                <input type="email" name="email" id="iemail" required maxlength="35" autocomplete="email" placeholder="E-mail">
+            </p>
+            <p>
+                <label for="itel">Telefone</label>
+                <input type="tel" name="tel" id="itel" required autocomplete="tel-national" placeholder="(31)99999-9999" pattern="^\(\d{2}\)\s\d{5}-\d{4}$">
+            </p>
+            <!-- PATTERN Telefone brasileiro: ^\(\d{2}\)\s\d{5}-\d{4}$  -->
+            <p>
+                <label for="isen">Senha</label>
+                <input type="password" name="sen" id="isen" required maxlength="35" autocomplete="current-password" placeholder="Senha">
+        </fieldset>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
 </body>
 </html>
