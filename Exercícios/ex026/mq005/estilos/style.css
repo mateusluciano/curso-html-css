@@ -35,6 +35,7 @@ span#burguer{
     background-color: rgb(22, 22, 22);
     color: white;
     display: block;
+    width: 100vw;
     text-align: center;
     padding: 10px;
     cursor: pointer;
@@ -88,4 +89,9 @@ main p {
     margin-bottom: 15px;
     text-align: justify;
     text-indent: 20px;
+}
+
+::-webkit-scrollbar{
+    width: 0px;
+    height: 0px;
 }
