@@ -24,30 +24,54 @@ header h1 {
     padding: 15px;
 }
 
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+span#burguer{
+    background-color: rgb(22, 22, 22);
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#burguer:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
 header ul {
+    list-style: none;
     text-align: center;
 }
 
-header li {
-    display: inline-block;
-    background-color: rgb(75, 75, 75);
+#itens {
+    display: none;
+}
+
+header > nav > ul > li > a {
+    display: block;
     padding: 10px;
-    border-radius: 5px;
-}
-
-header a {
-    color: white;
     text-decoration: none;
+    background-color: rgb(43, 43, 43);
+    color: white;
+
+    border-top: 1.5px solid lightgray;
 }
 
-header li:hover, a:hover {
+header a:hover {
     background-color: lightgray;
     color: black;
     font-weight: bold;
 }
 
 main {
-    width: 70vw;
+    width: 80vw;
     
     background-color: white;
     margin: 10px auto;
@@ -63,4 +87,5 @@ main h2 {
 main p {
     margin-bottom: 15px;
     text-align: justify;
+    text-indent: 20px;
 }
