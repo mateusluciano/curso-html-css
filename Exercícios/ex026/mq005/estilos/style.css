@@ -30,16 +30,18 @@ header ul {
 
 header li {
     display: inline-block;
-    list-style-type: none;
-    
+    background-color: rgb(75, 75, 75);
     padding: 10px;
-    background-color: rgb(73, 73, 73);
-    color: white;
     border-radius: 5px;
 }
 
-header li:hover {
-    background-color: lightgrey;
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+header li:hover, a:hover {
+    background-color: lightgray;
     color: black;
     font-weight: bold;
 }
