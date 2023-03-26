@@ -2,6 +2,15 @@
 
 /* Todas as demais mídias */
 
+/*
+TYPICAL DEVICE BREAKPOINT
+-------------------------
+Pequenas telas: até 600px
+Smartphones: de 600px até 768px
+Tablets: de 768px até 992px
+Desktop: de 992px até 1200px
+Grandes telas (TV): Acima de 1200px
+*/
 
 /* Versão Impressão */
 @media print {
@@ -9,14 +18,20 @@
     img#print{display: block;}
     
     body {
-        background: black url('../imagens/back-print.jpg') no-repeat center center;
-        background-size: cover;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    main {
+        border: 2px solid black;
+    }
+    main h1 {
+        text-shadow: none;
+        color: black;
     }
     
 }
 
 /* Versão Tablet */
-@media screen and (min-width: 490px) {
+@media screen and (min-width: 768px) {
     img#phone {display: none;}
     img#tablet {display: block;}
     img#print {display: none;}
@@ -30,7 +45,7 @@
 }
 
 /* Versão Desktop */
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 992px) {
     img#phone {display: none;}
     img#tablet {display: none;}
     img#print {display: none;}
