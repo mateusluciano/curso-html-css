@@ -35,7 +35,6 @@ span#burguer{
     background-color: rgb(22, 22, 22);
     color: white;
     display: block;
-    width: 100vw;
     text-align: center;
     padding: 10px;
     cursor: pointer;
